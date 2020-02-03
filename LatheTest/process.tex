@@ -1,0 +1,74 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{array}
+
+
+\begin{document}
+
+\title{MANU150 Lathe Test Process Plan} 
+\author{John Bush}
+
+\maketitle
+
+\section*{Stock selection}
+
+\begin{enumerate}
+	\item Start with $\phi = 1.675"$ Aluminum round bar, $\text{length max/min} = 2'/3"$.
+\end{enumerate}
+
+\section*{Bandsaw}
+
+\begin{enumerate}[resume]
+	\item If necessary, cut off $2'$ length of round bar.
+\end{enumerate}
+
+\section*{CNC Lathe} 
+
+\begin{enumerate}[resume]
+	\item Load material into 3-jaw chuck with $2.25"$ stickout.
+
+	\item Face material.
+
+	\item Turn first outer diameter to $\phi = 1.510"$ rough dimensions.
+
+	\item Turn second outer diameter to $\phi = 1.010"$ rough dimensions.
+
+	\item Turn first chamfer to rough dimensions.
+
+	\item Turn second chamfer to rough dimensions.
+
+	\item Take contour pass to finish to final dimensions.
+\end{enumerate}
+
+\section*{Bandsaw}
+
+\begin{enumerate}[resume]
+	\item Cut off part at shoulder.
+\end{enumerate}
+
+\section*{Manual Lathe}
+
+\begin{enumerate}[resume]
+	\item Face to final length.
+	
+	\item Deburr as needed.
+\end{enumerate}
+
+\begin{table}[ht]
+\centering
+\caption{Inspection Report}
+
+	\renewcommand\arraystretch{3}
+	\begin{tabular}{l | m{2cm} | m{2cm} | m{2cm} | m{2cm} | m{2cm} |}
+		Dimension & Value & Max & Min & Actual & In Tol? \\
+		\hline
+		Outer Diameter & $1.500"$ & $1.505"$ & $1.495"$ && \\
+		\hline
+		Length & $2.000"$ & $2.005"$ & $1.995"$ && \\ 
+		\hline
+	\end{tabular}
+\end{table}
+\end{document}
+
