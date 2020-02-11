@@ -1,0 +1,45 @@
+%
+o0001; (coded John Bush, 2/3/20)
+
+G98; (feed per minute)
+G80; (cancel canned cycles)
+G40; (cancel compensation)
+
+G90; (absolute positioning)
+G20; (inches positioning)
+G17; (XY-plane)
+
+M6 T1; (change to first tool)
+
+G00; (rapid on)
+G54 X2.5; (Word Coordinate System)
+Y0.0; 
+
+M03 S1200 F1.2;
+M08; (coolant on)
+
+G43 H1 Z0.10; (Tool Height Offset)
+
+G01; (ctrl feed)
+Z0.0; 
+X-2.50; (facing pass)
+G00; (rapid on)
+Z0.050; 
+
+(tool change here)
+M6 T2; (second tool)
+
+G00; (rapid on)
+G54 X-2.5; (Work Coordinate System)
+Y0.0;
+
+M03 S2000 F1.2; (figure out speeds)
+M08; (coolant on)
+G43 H2 Z0.05; (Tool Height Offset 2)
+
+
+
+
+M30; 
+
+N100 
