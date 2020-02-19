@@ -1,0 +1,64 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{array}
+
+\begin{document}
+
+\author{John Bush}
+\title{MANU 150 Mill Project Process Plan}
+
+\maketitle
+
+\section*{Rough Stock}
+
+\begin{enumerate}
+	\item Select Aluminum square bar, $\phi = 1.75"$, length $\text{min} = 2.125"$.
+\end{enumerate}
+
+\section*{Bandsaw}
+
+\begin{enumerate}[resume]
+	\item Cut off bar to length 2.125".
+\end{enumerate}
+
+\section*{CNC Mill}
+
+\begin{enumerate}[resume]
+	\item Set in vise and run program \texttt{mill1.gcode}.
+
+	\item Face material with $2"$ shell cutter.
+
+	\item Mill periphery with $\frac{5}{8}"$ endmill.
+
+	\item Peck drill center hole with $\frac{1}{4}"$ twist drill.
+
+	\item End program and flip over in vise.  Run program \texttt{mill2.gcode}.
+
+	\item Face to final dimensions with $2"$ shell cutter.
+
+	\item Check dimensions and deburr as needed.
+\end{enumerate}
+
+\newpage
+
+\begin{table}[ht]
+\centering
+\caption{Inspection Report}
+
+	\renewcommand\arraystretch{3}
+	\begin{tabular}{l | m{2cm} | m{2cm} | m{2cm} | m{2cm} | m{2cm} |}
+		Dimension & Value($"$) & Max($"$) & Min($"$)  & Actual($"$) & In Tol? \\
+		\hline
+		Length & 2.000 & 2.005 & 1.995 & & \\
+		\hline
+		Width & 1.500 & 1.505 & 1.495 & & \\
+		\hline 
+		Height & 1.250 & 1.255 & 1.245 & & \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\end{document}
+
