@@ -26,7 +26,7 @@ Y0.25;
 G01; (ctrl feed)
 X2.50; (facing pass)
 
-M06 T10; (tool change #8 5/8" endmill)
+M06 T10; (tool change #10 5/8" endmill)
 G43 H10; (tool length compensation tool #8)
 M03 S1200 F24.0; (spindle on 1200rpm 24.0 ipm)
 
